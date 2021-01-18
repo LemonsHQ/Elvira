@@ -1,0 +1,16 @@
+{
+  "name": "Shawzin Thingy Mah Bob",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-wav-player": "^0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "LemonsHQ",
+  "license": "ISC"
+}
