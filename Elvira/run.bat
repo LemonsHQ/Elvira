@@ -1,4 +1,3 @@
-cd ./nodejs/
-node.exe ./project/index.js
+node ./project/index.js
 echo Running Complete
 pause

@@ -1,5 +1,5 @@
 // REQUIRE PACKAGES & FILES
-const player = require('node-wav-player');
+const player = require('../../module/node-wav-player');
 
 
 console.log(`
@@ -16,30 +16,26 @@ Hello, my name is
 
 Keys:
 1 - 0 Strings            q - i Strings
-
-Escape             =                  exit
 `);
 
+process.stdin.setRawMode( true );
 
-var stdin = process.stdin;
+process.stdin.setEncoding( 'utf8' );
 
-stdin.setRawMode( true );
+process.stdin.setNoDelay( true );
 
-stdin.resume();
+process.stdin.setMaxListeners(3);
 
-stdin.setMaxListeners(0)
 
-stdin.setEncoding( 'utf8' );
 
-stdin.setNoDelay( false );
-
-function start() {
-      //player.play({path: './project/shawzin/gr/Grineer/shawzinEquip.wav'})
-
-      stdin.on( 'data', function( key ){
-        if ( key === '/u001b' ) {
-          process.exit();
+const doSomethingAsync = async () => {
+  return new Promise(resolve => {
+      process.stdin.on( 'data', function( key ){
+        if ( key === 'esc' ) {
+          process.stdin.exit();
         }
+
+    
         if ( key === '1' ) {
           player.play({path: './project/shawzin/1-01.wav'})
         }
@@ -95,11 +91,15 @@ function start() {
           player.play({path: './project/shawzin/1-18.wav'})
         }           
         
-        //process.stdout.write( key );
-      });
-  
-}
+
+      })
+    })
+  }
+  const doSomething = async () => {
+    await doSomethingAsync()
+  }
+
+setImmediate(doSomething)
 
 
-setImmediate(start);
 
