@@ -33,7 +33,7 @@ stdin.setEncoding( 'utf8' );
 
 stdin.setNoDelay( false );
 
-const start = async () =>{
+function start() {
       //player.play({path: './project/shawzin/gr/Grineer/shawzinEquip.wav'})
 
       stdin.on( 'data', function( key ){
@@ -101,5 +101,5 @@ const start = async () =>{
 }
 
 
-start()
+setImmediate(start);
 
