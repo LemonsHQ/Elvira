@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "luanode-runtime": "^0.1.0",
     "node-wav-player": "^0.2.0"
   },
   "devDependencies": {},

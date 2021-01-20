@@ -1,6 +1,6 @@
 // REQUIRE PACKAGES & FILES
-const player = require('../../module/node-wav-player');
-
+player = require('../../node_modules/node-wav-player');
+const { exec } = require('child_process');
 
 console.log(`
 Hello, my name is 
@@ -28,22 +28,20 @@ process.stdin.setRawMode( true );
 
 process.stdin.setEncoding( 'utf8' );
 
-process.stdin.setNoDelay( true );
+process.stdin.setNoDelay( false );
 
-process.stdin.setMaxListeners(3);
+process.stdin.setMaxListeners(10);
+
+
 
 
 
 const doSomethingAsync = async () => {
   return new Promise(resolve => {
-      process.stdin.on( 'data', function( key ){
-        if ( key === 'esc' ) {
-          process.stdin.exit();
-        }
 
-    
+      process.stdin.on( 'data', function( key ){
         if ( key === '1' ) {
-          player.play({path: './project/shawzin/1-01.wav'})
+            player.play({path: './project/shawzin/1-01.wav'})
         }
         if ( key === '2' ) {
           player.play({path: './project/shawzin/1-02.wav'})
@@ -96,7 +94,7 @@ const doSomethingAsync = async () => {
         if ( key === 'i' ) {
           player.play({path: './project/shawzin/1-18.wav'})
         }           
-        
+      
 
       })
     })
