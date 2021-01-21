@@ -3,6 +3,7 @@ function init(self)
 	-- Learn more: https://defold.com/manuals/script/
 	-- Remove this function if not needed
 	if action_id == hash("1") then
+		print("yes")
 		sound.play("/1#sound", {delay = 1, gain = 100, pan = -1.0, speed = 1.25})
 	end
 	
