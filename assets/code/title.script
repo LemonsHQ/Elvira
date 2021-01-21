@@ -6,6 +6,7 @@ function init(self)
 	go.set('.', 'position.x', -200)
 	go.animate('.','position.x', go.PLAYBACK_ONCE_FORWARD, 200, 10, 1)
 	
+	
 end
 
 function final(self)

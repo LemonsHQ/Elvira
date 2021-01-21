@@ -1,7 +1,7 @@
 name: "default"
 scale_along_z: 0
 embedded_instances {
-  id: "go"
+  id: "piano"
   data: "embedded_components {\n"
   "  id: \"camera\"\n"
   "  type: \"camera\"\n"
