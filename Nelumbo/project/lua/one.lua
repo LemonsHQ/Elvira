@@ -1,1 +1,0 @@
-luacall(playSound(findTableFile('./project/shawzin/1-01.wav')))
