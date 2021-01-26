@@ -1,108 +1,13 @@
 name: "main"
 scale_along_z: 0
 embedded_instances {
-  id: "background"
+  id: "MainMenu"
   data: "components {\n"
-  "  id: \"menu\"\n"
-  "  component: \"/assets/code/title.script\"\n"
+  "  id: \"main\"\n"
+  "  component: \"/assets/code/main.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  "embedded_components {\n"
-  "  id: \"Elvira\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/assets/images/atlas.atlas\\\"\\n"
-  "default_animation: \\\"logo2\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
-  position {
-    x: 232.0
-    y: 544.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 0.2
-    y: 0.2
-    z: 0.2
-  }
-}
-embedded_instances {
-  id: "instru"
-  data: "components {\n"
-  "  id: \"instru\"\n"
-  "  component: \"/assets/code/instru.script\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  "embedded_components {\n"
-  "  id: \"Guitar\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/assets/images/atlas.atlas\\\"\\n"
-  "default_animation: \\\"Guitar\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  "embedded_components {\n"
-  "  id: \"Piano\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/assets/images/atlas.atlas\\\"\\n"
-  "default_animation: \\\"Piano\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: -3.75\n"
-  "    y: -89.25\n"
   "    z: 0.0\n"
   "  }\n"
   "  rotation {\n"
@@ -121,9 +26,9 @@ embedded_instances {
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
-  "    x: -23.75\n"
-  "    y: -161.25\n"
-  "    z: 0.0\n"
+  "    x: -17.75\n"
+  "    y: -293.54\n"
+  "    z: -21.342\n"
   "  }\n"
   "  rotation {\n"
   "    x: 0.0\n"
@@ -132,33 +37,58 @@ embedded_instances {
   "    w: 1.0\n"
   "  }\n"
   "}\n"
-  ""
-  position {
-    x: 250.0
-    y: 410.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 0.8
-    y: 0.8
-    z: 0.8
-  }
-}
-embedded_instances {
-  id: "1"
-  data: "components {\n"
-  "  id: \"main\"\n"
-  "  component: \"/assets/code/main.script\"\n"
+  "embedded_components {\n"
+  "  id: \"Piano\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/assets/images/atlas.atlas\\\"\\n"
+  "default_animation: \\\"Piano\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
   "  position {\n"
+  "    x: 8.25\n"
+  "    y: -155.395\n"
+  "    z: -10.671\n"
+  "  }\n"
+  "  rotation {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
   "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"Guitar\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/assets/images/atlas.atlas\\\"\\n"
+  "default_animation: \\\"Guitar\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 9.0\n"
+  "    y: 48.375\n"
+  "    z: 7.804\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"Elvira\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/assets/images/atlas.atlas\\\"\\n"
+  "default_animation: \\\"logo2\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 656.0\n"
+  "    y: 374.213\n"
+  "    z: -52.561\n"
   "  }\n"
   "  rotation {\n"
   "    x: 0.0\n"
@@ -175,7 +105,7 @@ embedded_instances {
   "group: \\\"master\\\"\\n"
   "gain: 1.0\\n"
   "pan: 0.0\\n"
-  "speed: 111.0\\n"
+  "speed: 1.0\\n"
   "\"\n"
   "  position {\n"
   "    x: 0.0\n"
@@ -191,15 +121,15 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: 0.0
-    y: 0.0
+    x: 275.0
+    y: 367.0
     z: 0.0
   }
   rotation {
-    x: 0.0
+    x: -0.07989283
     y: 0.0
     z: 0.0
-    w: 1.0
+    w: 0.99680346
   }
   scale3 {
     x: 1.0

@@ -2,11 +2,6 @@ function init(self)
 	-- Add initialization code here
 	-- Learn more: https://defold.com/manuals/script/
 	-- Remove this function if not needed
-	
-	go.set('.', 'position.x', -200)
-	go.animate('.','position.x', go.PLAYBACK_ONCE_FORWARD, 200, 10, 1)
-	
-	
 end
 
 function final(self)
