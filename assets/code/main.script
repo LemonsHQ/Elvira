@@ -1,12 +1,8 @@
 function init(self)
+	msg.post(".", "acquire_input_focus")
 	-- Add initialization code here
 	-- Learn more: https://defold.com/manuals/script/
 	-- Remove this function if not needed
-	if action_id == hash("1") then
-		print("yes")
-		sound.play("/1#sound", {delay = 1, gain = 100, pan = -1.0, speed = 1.25})
-	end
-	
 end
 
 function final(self)
@@ -28,6 +24,9 @@ function on_message(self, message_id, message, sender)
 end
 
 function on_input(self, action_id, action)
+	if (action_id == hash("1")) then
+		sound.play("/1#sound", {delay = 1, gain = 100, pan = -1.0, speed = 1.25})
+	end
 	-- Add input-handling code here. The game object this script is attached to
 	-- must have acquired input focus:
 	--
@@ -37,6 +36,7 @@ function on_input(self, action_id, action)
 	-- be received regardless of where on the screen it happened.
 	-- Learn more: https://defold.com/manuals/input/
 	-- Remove this function if not needed
+	
 end
 
 function on_reload(self)

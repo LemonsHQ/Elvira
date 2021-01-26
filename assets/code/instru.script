@@ -1,4 +1,5 @@
 function init(self)
+	msg.post(".", "acquire_input_focus")
 	-- Add initialization code here
 	-- Learn more: https://defold.com/manuals/script/
 	-- Remove this function if not needed
@@ -29,6 +30,17 @@ function on_message(self, message_id, message, sender)
 end
 
 function on_input(self, action_id, action)
+	--msg.post("/instru#menugui", hash("message"))
+	--local visiable = not gui.is_enabled(gui.get_node("/background#Elvira"))
+	if(action_id == hash("ESC") and action.released)then
+		if(visiable == true)then
+			visiable = "enable"
+		end
+		if(visiable == false)then
+			visiable = "disable"
+		end
+		msg.post("/background#Elvira", visiable)
+	end
 	-- Add input-handling code here. The game object this script is attached to
 	-- must have acquired input focus:
 	--

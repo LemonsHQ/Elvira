@@ -38,7 +38,15 @@ key_trigger {
   input: KEY_9
   action: "9"
 }
+key_trigger {
+  input: KEY_ESC
+  action: "ESC"
+}
 mouse_trigger {
-  input: MOUSE_BUTTON_1
-  action: "touch"
+  input: MOUSE_BUTTON_RIGHT
+  action: "RightClick"
+}
+mouse_trigger {
+  input: MOUSE_BUTTON_LEFT
+  action: "LeftClick"
 }
