@@ -24,7 +24,7 @@ function on_message(self, message_id, message, sender)
 end
 
 function on_input(self, action_id, action)
-	if (action_id == hash("1")) then
+	if (action_id == hash("1") and action.released) then
 		sound.play("/1#sound", {delay = 1, gain = 100, pan = -1.0, speed = 1.25})
 	end
 	-- Add input-handling code here. The game object this script is attached to
